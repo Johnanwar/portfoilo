@@ -3,7 +3,6 @@
 $(function(){
    $(window).resize (function() { $(".home").height ($(window).height()); }); 
    $(".home").height($(window).height()) ;
-	$(".nav").height($(window).height()) ;
 	
 	$('.text-down i').click(function() {
 	$('html , body').animate({scrollTop:$($('#Home')).offset().top },1000)	});
@@ -133,9 +132,12 @@ new TypeIt('.front', {
 		$(".fa-linkedin-in").click(function(){
 		window.open("https://www.linkedin.com/in/john-anwar-099aba176/","","")
 	})
+	// social section
 	
+	// start wow .js
 	
-	
+	new WOW().init();
+
 	
 	
 	});

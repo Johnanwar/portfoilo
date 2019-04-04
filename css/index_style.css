@@ -5,6 +5,10 @@
     box-sizing: border-box;
     transition: all 1s;
 }
+body
+{
+	position: relative;
+}
 :root
 {
 	--maincolor:#990099;
@@ -412,6 +416,28 @@ a
 {
 	box-shadow: 5px 4px 4px var(--maincolor);
 }
+.owl-carousel .owl-nav button.owl-prev
+{
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font-size: 50px !important;
+    position: absolute;
+    left: 0;
+    top: 151px;
+	}
+.owl-carousel .owl-nav button.owl-next
+{
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font-size: 50px !important;
+    position: absolute;
+    right: 20px;
+    top: 151px;
+	}
 /* end section works */
 
 /* start contact section */
@@ -494,8 +520,13 @@ a
 {
 	height: 233px!important;
 }
+footer
+{
+	background-color: #2c2d32;
+	color: #8c8c8c;
+}
 
-/* sendtart footer SECTION  */
+/* end footer SECTION  */
 
 /* start alwan SECTION  */
 
@@ -580,18 +611,18 @@ a
 
 @media only screen and (max-width:775px) {
   .nav , .testat {
-	 position: fixed;
-    left: 0;
-	top: 0;
-	right: 0;
-	height: 100px;
+	position: fixed !important;
+    left: 0 !important;
+	top: 0 !important;
+	right: 0 !important;
+	height: 100px !important;
   }
 }
 @media only screen and (max-width:775px) {
   .nav div , .testat div {
-   display: inline-block;
-	  margin-top: 0;
-	  padding-top:0; 
+   display: inline-block !important;
+	  margin-top: 0 !important;
+	  padding-top:0 !important; 
 	  
   }
 }
@@ -604,7 +635,7 @@ a
 }
 @media only screen and (max-width:775px) {
   .text-home::after , .text-about::after , .text-service::after , .text-works::after , .text-Contact::after{
-	  top: 64px !important; 
+	  top: 64px !important ; 
 	  left: -4px !important;  
   }
 }
