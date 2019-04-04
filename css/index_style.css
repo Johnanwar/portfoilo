@@ -79,7 +79,7 @@ a
 /* nav baaar */
 
 /* About seection  */
-.nav
+.nav , .testat
 {
 	position: fixed;
 	left: 0;
@@ -114,12 +114,12 @@ a
 	color: var(--maincolor);
 }
 
-.nav i
+.nav i  , .testat i
 {
 	border: 1px solid #333;
 	padding: 8px;
 }
-.nav i:hover
+.nav i:hover , .testat i:hover
 {
 	border-radius: 50%;
     border: 1px solid var(--maincolor);
@@ -576,8 +576,10 @@ a
 }
 /* end alwan SECTION  */
 
+/* start nav media  */
+
 @media only screen and (max-width:775px) {
-  .nav{
+  .nav , .testat {
 	 position: fixed;
     left: 0;
 	top: 0;
@@ -586,7 +588,7 @@ a
   }
 }
 @media only screen and (max-width:775px) {
-  .nav div{
+  .nav div , .testat div {
    display: inline-block;
 	  margin-top: 0;
 	  padding-top:0; 
@@ -606,7 +608,11 @@ a
 	  left: -4px !important;  
   }
 }
-@media only screen and (max-width:860px) {
+
+/* end nav media  */
+
+/* start nav media  */
+@media only screen and (max-width:1296px) {
   .img-about{
    
 	  margin-left: 35px;
@@ -632,8 +638,11 @@ a
 	  padding: 10px;
   }
 }
+/* end about media  */
 
-@media only screen and (max-width:874px) {
+/* start service media  */
+
+@media only screen and (max-width:1296px) {
   .service h3 , .service .line{
    
 	  margin-left: 40px;
@@ -648,6 +657,10 @@ a
   }
 	
 }
+
+/* end service media  */
+
+/* start contact media  */
 
 @media only screen and (max-width:1103px) {
   .call {

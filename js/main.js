@@ -3,6 +3,7 @@
 $(function(){
    $(window).resize (function() { $(".home").height ($(window).height()); }); 
    $(".home").height($(window).height()) ;
+	$(".nav").height($(window).height()) ;
 	
 	$('.text-down i').click(function() {
 	$('html , body').animate({scrollTop:$($('#Home')).offset().top },1000)	});
@@ -21,6 +22,16 @@ $(function(){
 	$(".navba a").click(function(){
 		$(this).addClass("activee").parent().siblings().find("a").removeClass("activee");
 	})
+	if( $(window).width() > "1000")
+		{
+			$(".testat").addClass("nav")
+		}
+	else
+		{
+			$(".testat").removeClass("nav")
+		}
+
+
 	
 	// type js plugin
 new TypeIt('.front', {
