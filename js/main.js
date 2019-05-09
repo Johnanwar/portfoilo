@@ -7,6 +7,8 @@ $(function(){
 	
 	$('.btn-contsct').click(function() {
 	$('html , body').animate({scrollTop:$($('#contact')).offset().top },1000)	});
+	$('.text-down').click(function() {
+		$('html , body').animate({scrollTop : 0 },1000)	});
 	
 	 $(".navba a").click(function (e){
      e.preventDefault();                     
@@ -98,6 +100,12 @@ var myFunction = setInterval (function(){
 	})
 	$(".btn-10").click(function(){
 		window.open("https://github.com/Johnanwar/Classic-project","","")
+	})
+	$(".btn-12").click(function(){
+		window.open("https://github.com/Johnanwar/portfoilo","","")
+	})
+	$(".btn-11").click(function(){
+		window.open("https://johnanwar.github.io/portfoilo/","","")
 	})
 	
 		// works section
