@@ -360,7 +360,10 @@ a
 }
 .text-down 
 {
-	margin-top: 35px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
 	background-color: var(--maincolor);
 }
 .text-down i
