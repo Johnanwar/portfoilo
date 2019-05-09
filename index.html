@@ -8,10 +8,6 @@
         <link rel="stylesheet" href="css/all.min.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/all.css"/>
-		<link rel="stylesheet" href="css/normalize.css"/>
-		<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-		<link rel="stylesheet" href="css/owl.theme.default.min.css"/>
-		<link rel="stylesheet" href="css/animate.css"/>
 
 		<link rel="stylesheet" href="css/index_style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -20,30 +16,29 @@
     </head>
     <body>
 		
-			<div class=" testat">
+			<div class=" nav">
 				<div class="logo">
-					John
+					J<span>oh</span>n
 				</div>
 				
-				<div  class="mt-5 navba text-home">
-					<a href="#" data-value="Home"><i class="fas fa-home "></i> </a>
+				<div  class="mt-5 navba text text-home">
+					<p><a href="#" data-value="Home"><i class="fas fa-home "></i> </a> <span>Home</span></p>
 				</div>
 				
-				<div  class="navba text-about">
-				<a href="#" data-value="About"><i class="fas fa-id-badge "></i></a>
-
+				<div  class="navba text text-about">
+			<p><a href="#" data-value="About"><i class="fas fa-id-badge "></i> </a> <span> about</span> </p>	
 				</div>
 				
-				<div  class="navba text-service">
-				<a href="#" data-value="servise"><i class="fas fa-star"></i></a>	
+				<div  class="navba text text-service">
+				<p><a href="#" data-value="servise"><i class="fas fa-star"></i> </a>	 <span>service</span> </p>
 				</div>
 				
-				<div  class="navba text-works">
-				<a href="#" data-value="work"><i class="fas fa-briefcase"></i></a>
+				<div  class="navba text text-works">
+			<p><a href="#" data-value="work"><i class="fas fa-briefcase"></i> </a> <span>work</span> </p>
 				</div>
 				
-				<div  class="navba text-Contact">
-				<a href="#" data-value="contact"><i class="fas fa-envelope"></i></a>
+				<div  class="navba text text-Contact">
+			<p>	<a href="#" data-value="contact"><i class="fas fa-envelope"></i> </a> <span>contact us</span> </p>
 				</div>
 				
 				<div  class=" text-down">
@@ -52,16 +47,27 @@
 				
 			</div>
 		<section id="Home" class="home">
-		<div class="overlay">
+			
+						<div class="carousel-item-three ">
+							<div class="slide-1"> <div class="overlay-1"></div> </div> 
+							<div class="slide-2"><div class="overlay-1"></div> </div>
+							<div class="slide-3"> <div class="overlay-1"></div> </div>	
 			
 		
-			
-			<div class="home-content ml-5">
-			<h1>Hey there ! <br>
-                I'm <span class="front"> </span> <br> 
-                 Front-End Developper </h1>
-			<button class="btn">Lets Start  <i class="fas fa-angle-double-down"></i></button>
-				</div>
+
+				<div class="center-block"  id="home">
+						<div class="center-block-wrap">
+							<div class="center-block-body ">
+									<div class="home-content ml-5">
+											<h1>Hey there ! <br>
+															I'm <span id="front"> </span> <br> 
+															 Front-End Developper </h1>
+											 <button class="btn">Lets Start  <i class="fas fa-angle-double-down"></i></button>
+											</div>
+									
+							</div>
+						</div>
+					</div>
 					
 			
 		 </div>
@@ -88,91 +94,95 @@
 <!-- start about section-->
 		
 		<section id="About" class="about py-5">
-			<div class="about-header">
+			<div class="about-header mt-5">
 			<h2 class="text-center">About Me</h2>
 			  <hr>
 				</div>
 			<div class="container">
 				<div class=" row">
 					
-		<div class="col-md-5 mt-5 wow wobble">
+		<div class="col-md-6 mt-5 about-section ">
 			<div class="img-about ">
 			<img src="images/my-2.jpeg" class="img-fluid" >
 				<div class="about-text"> <p>I'm a self-taught developer. 10 months ago I started front end web development as a self-study course and learned some new technology skills. then i took course "full stack diploma" at Route center it helped me to type a clean code , how to work in  teamwork and many great things . till now I'm still learning and searching in that career to improve my skills . </p>
-					<p class="text-center">
-						<a href=""><i class="fab fa-facebook-f"></i> </a>
-						<a href=""><i class="fab fa-twitter"></i></a>
-						<a href=""><i class="fab fa-linkedin-in"></i> </a>
-						<a href=""><i class="fab fa-github"></i></a> </p>
+				
+					<div class=" text-center  social pt-3">
+						<p> 
+							<a href="#"> <i class="fab fa-facebook-f"></i></a>
+							<a href=#><i class="fab fa-twitter">   </i> </a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#"><i class="fab fa-github">      </i></a>
+						</p>
+				</div>
 				
 				
 				</div>
 			</div>
 			</div>
 					
-			<div class="skills col-md-7 mt-5 wow swing">
+			<div class="skills col-md-6 mt-5 about-section">
 			 <p>HELLO, I'M JOHN ANWAR</p>
 				<h3>I'm front end developper and this is my <span>skills</span></h3>
 				<hr class="line">
 				
 				<div class="progress-container">
 							<span class="float-left">HTML 5</span><span class="float-right">95%</span>
-							<div class="clearfix"></div>
+					<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="95%" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 						
-						    <span class="float-left">CSS 3</span><span class="float-right">90%</span>
+						    <span class="float-left">CSS 3</span><span class="float-right">96%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="96%"  role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					    <span class="float-left">BOOTSTRAP </span><span class="float-right">96%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="96%" role="progressbar" style="width: 96%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 						
-						     <span class="float-left">JAVA SCRIPT</span><span class="float-right">75%</span>
+						     <span class="float-left">JAVA SCRIPT</span><span class="float-right">85%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="75%"  role="progressbar"  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 						
 						    <span class="float-left">J QUERY</span><span class="float-right">88%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="88%"  role="progressbar" style="width: 88%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					
 						    <span class="float-left">ANGULR 7</span><span class="float-right">77%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="77%"  role="progressbar" style="width: 77%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					
 							<span class="float-left">SASS</span><span class="float-right">93%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="93%"  role="progressbar" style="width: 93%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					
 							<span class="float-left">GIT</span><span class="float-right">80%</span>
 							<div class="clearfix"></div>
 						
 						<div class="progress my-2">
-						  <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						  <div class="progress-bar" data-value="88%"  role="progressbar" style="width: 88%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
 					</div>
-				<a href="https://drive.google.com/file/d/1NYnCQJLZzjFUiYVyPfBivTi9n8I2M4Ug/view"><button class="btn btn-cv mt-5 "  > Download CV <i class="far fa-arrow-alt-circle-down"></i>
-				</button> </a> <button class="btn btn-contsct mt-5"  > Contact Me <i class="fas fa-phone-square"></i> </button>
+				<a href="https://drive.google.com/file/d/1RhqLz9q1riFP_PWwzHhSMvf0-JMRiBt2/view"><button class="btn btn-cv mt-5 "  > Download CV <i class="far fa-arrow-alt-circle-down"></i>
+				</button> </a> <button class="btn btn-contsct float-right mt-5"  > Contact Me <i class="fas fa-phone-square"></i> </button>
 				
 		  	</div>
 					
@@ -186,52 +196,54 @@
 		
 		<section id="servise" class="service py-5 ">
 			
-				<div class="service-header">
-			<h2 class="text-center">Services</h2>
-			  <hr>
+				<div class="service-header mt-1">
+		    	<h2 class="text-center">Services</h2>
+			    <hr>
 				</div>
+
 			<div class="container">
-					<h3 >I Provide This Services</h3>
-				<hr class="line">
-			  <div class="row ml-5 mt-5">
+
+			<h5 class="text-center" >I Provide This Services</h5>
+
+			  <div class="row mt-5">
 			
-		<div class="col-md-4 mt-1 wow zoomInLeft">
+		<div class="col-md-4 mt-1 ">
 			
 			 <div class="card">
 			  <img src="./images/responsiv.jpg" class="img-fluid" alt="...">
 				<div class="card-body">
-				<h5 class="card-title">RESPONSIVE DESIGN</h5>
+				<h5 class="card-title"> <i class="fas fa-mobile-alt"></i> RESPONSIVE DESIGN</h5>
 				<p class="card-text">Make Any Website Fully Responsive with Any Device Or screen .</p>
 			  </div>
             </div>
 				  
 		</div>
 				  
-		<div class="col-md-4 mt-1 wow bounceOutDown">
+		<div class="col-md-4 mt-1 ">
 			
 			 <div class="card">
 			  <img src="./images/desig.jpeg" class="img-fluid" alt="...">
 				<div class="card-body">
-				<h5 class="card-title">SOLVE PROBLEMS</h5>
+				<h5 class="card-title"> <i class="fas fa-cogs"></i> SOLVE PROBLEMS</h5>
 				<p class="card-text">I Can find problems easily and working to solve it .</p>
 			  </div>
             </div>
 				  
 		 </div>
 				  
-		 <div class="col-md-4 mt-1 wow zoomInRight">
+		 <div class="col-md-4 mt-1 ">
 			 
 			 <div class="card">
 			  <img src="./images/creative-1.jpg" class="img-fluid" alt="...">
 				<div class="card-body">
-				<h5 class="card-title">CREATIVE DESIGN</h5>
+				<h5 class="card-title"> <i class="fab fa-creative-commons-by"></i> CREATIVE DESIGN</h5>
 				<p class="card-text">Make Design using new features with diffrent libraries. </p>
 			  </div>
             </div>
 				  
 		</div>
 				
-				</div>
+			 </div>
 			</div>
 		</section>
       <!-- END service section-->
@@ -244,61 +256,109 @@
 			  <hr>
 				</div>
 		<div class="container">
-				<h3 >This Is Samples Of My Works</h3>
-				<hr class="line">
+				<h5 class="text-center" >This Is Samples Of My Works</h5>
 		
 		<div class="row">
-			<div class="col-md-12 ">
-			
-			
-			<div class="owl-carousel container testmonial ml-4">
+
+				<div class="col-md-4 sm-6 my-3  w-100 ">
+						<div class="card blog-3">
+								<img src="./images/work 3.jpg" class=" img-fluid card-img-top" alt="...">
+								<div class="card-body">
+									<p class="clock"><i class="far fa-clock"></i> Jan 27, 2019 </p>
+								<h5 class="card-title"><a href="#">Symptom-Checker</a></h5>
+								<p class="card-text">Website talks about disease and how to recover it and the sutable medcine fo it .</p>
+							<hr>
+								<button class="btn btn-3 mt-2"><a href="">view Demo</a></button> 
+								<button class="btn btn-4 mt-2"><a href="">view Code</a></button>
+								
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-md-4 sm-6 my-3 w-100 ">
+								<div class="card blog-3">
+										<img src="./images/work2.jpg" class=" img-fluid card-img-top" alt="...">
+										<div class="card-body">
+											<p class="clock"><i class="far fa-clock"></i> march 27, 2019 </p>
+										<h5 class="card-title"><a href="#">Anagora-Project</a></h5>
+										<p class="card-text">Website talks about a professional team in developping and designing contins many sections about them  .</p>
+									<hr>
+										<button class="btn btn-1 mt-2"><a href="">view Demo</a></button>
+										<button class="btn btn-2 mt-2"><a href="">view Code</a></button>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 sm-6 my-3 w-100 ">
+										<div class="card blog-3">
+												<img src="./images/work 2.jpg" class=" img-fluid card-img-top" alt="...">
+												<div class="card-body">
+													<p class="clock"><i class="far fa-clock"></i> feb 27, 2019 </p>
+												<h5 class="card-title"><a href="#">Tnatos-project</a></h5>
+												<p class="card-text">simble Website talks about team who innterested in designing.</p>
+												<hr>
+												<button class="btn btn-5  mt-2"><a href="">view Demo</a></button> 
+												<button class="btn btn-6 mt-2"><a href="">view Code</a></button>
+
+												
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-4 sm-6 my-3 w-100  ">
+												<div class="card blog-3">
+														<img src="./images/work-6.jpg" class="w-100 img-fluid card-img-top" alt="...">
+														<div class="card-body">
+															<p class="clock"><i class="far fa-clock"></i> Dec 27, 2018 </p>
+														<h5 class="card-title"><a href="#">Classic-project</a></h5>
+														<p class="card-text">it was the first site i had done so its specialy as me.</p>
+														<br>
+														<button class="btn btn-7 mt-2"><a href="">view Demo</a></button>
+														<button class="btn btn-8 mt-2"><a href="">view Code</a></button>
+													
+														</div>
+													</div>
+												</div>
+
+												<div class="col-md-4 sm-6 my-3 w-100  ">
+														<div class="card blog-3 sm-6 w-100 ">
+																<img src="./images/work-4.jpg" class="w-100 img-fluid card-img-top" alt="...">
+																<div class="card-body">
+																	<p class="clock"><i class="far fa-clock"></i> may 5, 2019 </p>
+																<h5 class="card-title"><a href="#">tourism-project</a></h5>
+																<p class="card-text">the last site i had  done its in arabic so it is diffrent than the others</p>
+																<br>
+																<button class="btn btn-9 clea mt-2"><a href="#">view Demo</a></button>
+																<button class="btn btn-10 mt-2"><a href="#">view Code</a></button>
+																
+																</div>
+															</div>
+														</div>
+						
+														<div class="col-md-4 sm-6 my-3 w-100  ">
+																<div class="card blog-3">
+																		<img src="./images/my-2.jpeg" class="w-100 img-fluid card-img-top" alt="...">
+																		<div class="card-body">
+																			<p class="clock"><i class="far fa-clock"></i> Apr 20, 2019 </p>
+																		<h5 class="card-title"><a href="#">portfolio</a></h5>
+																		<p class="card-text">its my own website its contain every thing about me </p>
+																	<br>
+																		<button class="btn btn-11 mt-2"><a href="#">view Demo</a></button>
+																		<button class="btn btn-12 mt-2"><a href="#">view Code</a></button>
+
+																		</div>
+																	</div>
+																</div>
+
+								
 				 	
-				       <div class=" first text-center px-2"  > 
-					  <img class="  m-auto" src="images/2.png">
-						   <div class="first-overlay">
-							<div class="text-center demo">
-								<h4 class="pt-3">Anagora-Project</h4>
-								<button class="btn btn-1"><a href="">view Demo</a></button>
-								<button class="btn btn-2"><a href="">view Code</a></button>
-							   </div>
-						   </div>
-					</div>
+				    
 					
-		               <div class=" first text-center px-2 "  > 
-					  <img class=" w-100 img-fluid m-auto" src="images/4.png">
-						   <div class="first-overlay">
-							   <div class="text-center demo">
-								   <h4 class="pt-3">Symptom-Checker</h4>
-								<button class="btn btn-3"><a href="">view Demo</a></button> 
-								   <button class="btn btn-4"><a href="">view Code</a></button>
-							   </div>
-						   </div>
-					</div>
+		       
+		
 				
-				 <div class=" first text-center px-2"  > 
-					  <img class=" w-100 img-fluid m-auto" src="images/1.png">
-					 <div class="first-overlay">
-					 <div class="text-center demo">
-						 <h4 class="pt-3">Tnatos-project</h4>
-								<button class="btn btn-5"><a href="">view Demo</a></button> 
-						 <button class="btn btn-6"><a href="">view Code</a></button>
-							   </div>
-					 </div>
-					</div>
-				
-				 <div class=" first text-center px-2"  > 
-					  <img class=" w-100 img-fluid m-auto" src="images/3.png">
-					 <div class="first-overlay">
-					 <div class="text-center demo">
-						 <h4 class="pt-3">Classic-Checker</h4>
-								<button class="btn btn-7"><a href="">view Demo</a></button>
-						 <button class="btn btn-8"><a href="">view Code</a></button>
-							   </div>
-					 </div>
-					</div>
 	
-				</div>
-			</div>
+			
 		 </div>
 		</div>
 	  </section>
@@ -317,50 +377,49 @@
 				<div class="col-md-6 py-5">
 					
 					<div class="call ">
-					<h4> <i class="fas fa-phone"></i> Call Me</h4>
-						<p>01273848078 <span> (Main Number)</span></p>
-						<p>01551882135</p>
+						<p> <i class="fas fa-phone"></i>  01273848078 <span> (Main Number)</span></p>
+						<p> <i class="fas fa-phone"></i>  01551882135 <span> (Whats up number)</span></p>
+
+
 						</div>
 					
 					<div class="call mt-1 ">
-						<h4><i class="fas fa-envelope-open"></i> Mail</h4>
-						<p><a href="#">johnanwar30@gmail.com</a> </p>
+						<p> <i class="fas fa-envelope-open"></i> <a href="https://myaccount.google.com/?pli=1">johnanwar30@gmail.com</a> </p>
 						</div>
 					
 					    <div class="call mt-1 ">
-						<h4><i class="fas fa-map-marker"></i> Address</h4>
-						<p> Cairo Egypt </p>
+						<p> <i class="fas fa-map-marker"></i> Azbt Elnakhl - Cairo - Egypt </p>
 						</div>
+
+						<div class="call mt-1 ">
+							<p> <i class="fab fa-linkedin-in"> </i><a href="https://github.com/Johnanwar">https://github.com/Johnanwar</a></p>
+							</div>
 					
-					  <div class="call mt-1 ">
-						<h4><i class="far fa-user-circle"></i> Accounts</h4>
-						<p> <a href=""> <i class="fab fa-facebook-f"></i></a>
-							<a href=""><i class="fab fa-twitter"></i> </a>
-							<a href=""><i class="fab fa-linkedin-in"></i></a>
-							<a href=""><i class="fab fa-github"></i></a></p>
-						
-				     </div>
+					  <!-- <div class="call mt-1 ">
+				
+						 </div> -->
+						 
 				  </div>
 				<div class="col-md-6  py-5 ">
 				
 				<form>
   <div class="form-row">
 	  <div class="form-group col-md-12">
-      <input type="Text" class="form-control" placeholder="Name">
+      <input type="Text" required ="required" class="form-control" placeholder="Name">
     </div>
 	  
     <div class="form-group col-md-12">
-      <input type="email" class="form-control"  placeholder="Email">
+      <input type="email" required ="required"  class="form-control"  placeholder="Email">
     </div>
 	  
     <div class="form-group col-md-12">
-      <input type="Text" class="form-control"  placeholder="Subject">
+      <input type="Text" required ="required"  class="form-control"  placeholder="Subject">
     </div>
 	  
 	   <div class="form-group col-md-12">
 	 <textarea class="form-control group"  rows="3" placeholder="Type Your Message"></textarea>
  </div>
-	  <button class="btn">Send A Message</button>
+		<button class="btn btn-block ">Send A Message</button>
   </div>
 					
  
@@ -372,12 +431,26 @@
 			</div>
 		</section>
 		
-		<footer>
-		  <div claass="container">
-			<div class="col-md-10 text-center py-4">
-			  <h5>Copyrights © 2019 All Rights Reserverd.</h5>
-			  </div>
-			
+		<footer >
+		  <div class="container">
+				<div class="row">
+
+								<div class="col-md-6 text-center  social pt-3">
+										<p> 
+											<a href="#"> <i class="fab fa-facebook-f"></i></a>
+											<a href=#><i class="fab fa-twitter">   </i> </a>
+											<a href="#"><i class="fab fa-linkedin-in"></i></a>
+											<a href="#"><i class="fab fa-github">      </i></a>
+										</p>
+								</div>
+
+										
+						<div class="col-md-6  text-center pt-3">
+								<h5> Copyrights © 2019 All Rights Reserverd.</h5>
+				  	</div>
+										
+
+					</div>
 			</div>
 		
 		</footer>
@@ -385,10 +458,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>    
     <script src="js/popper.min.js"></script>    
     <script src="JS/bootstrap.min.js"></script>
-	<script src="js/typeit.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
+ 	<script src="js/main.js"></script>
      
     </body>
 </html>

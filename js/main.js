@@ -1,12 +1,7 @@
 /* global  , console  */
 
 $(function(){
-   $(window).resize (function() { $(".home").height ($(window).height()); }); 
-   $(".home").height($(window).height()) ;
-	
-	$('.text-down i').click(function() {
-	$('html , body').animate({scrollTop:$($('#Home')).offset().top },1000)	});
-	
+ 
 	$('.home-content .btn').click(function() {
 	$('html , body').animate({scrollTop:$($('#About')).offset().top },1000)	});
 	
@@ -14,65 +9,46 @@ $(function(){
 	$('html , body').animate({scrollTop:$($('#contact')).offset().top },1000)	});
 	
 	 $(".navba a").click(function (e){
-	 console.log("jhg")
      e.preventDefault();                     
      $("html , body").animate({ scrollTop:$("#" + $(this).data("value")).offset().top },1000)  }); 
 	
 	$(".navba a").click(function(){
-		$(this).addClass("activee").parent().siblings().find("a").removeClass("activee");
+		$(this).addClass("activee").parent().parent().siblings().find("a").removeClass("activee");
 	})
-	if( $(window).width() > "1000")
-		{
-			$(".testat").addClass("nav")
-		}
-	else
-		{
-			$(".testat").removeClass("nav")
-		}
 
 
 	
-	// type js plugin
-new TypeIt('.front', {
-  strings: ["JOHN ANWAR" ],
-  speed: 300,
-  breakLines: false,
-  waitUntilVisible: true,
- loop: true,
-}).go();
-	
-// end type js plugin
-	
-	// owlCarousel plugin
-	
-	$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-	animateOut: 'fadeIt',
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-		 600:{
-            items:2,
-            nav:true
-        },
-        
-        
-        1000:{
-            items:3,
-            nav:true,
-            loop:true
-        }
-    }
-})
-	
-	// end owlCarousel plugin
+
+// stat type js function
+var i = 0
+var myText = "JOHN ANWAR"
+var span = document.getElementById("front")
+
+
+var myFunction = setInterval (function(){
+ span.textContent += myText[i] ;
+ i++
+
+ if (i> myText.length-1)
+ {
+	 clearTimeout(myFunction)
+ }
+
+},400);
+
+// end type js function
+
+
+
+
+
+	// about progress 
+	  
+
+	$(".progress-bar").each( function (){
+		$(this).animate({
+			width:$(this).data("value")
+		},5000) })
 	
 // alwaan section
 	
@@ -117,6 +93,12 @@ new TypeIt('.front', {
 	$(".btn-8").click(function(){
 		window.open("https://github.com/Johnanwar/Classic-project","","")
 	})
+	$(".btn-9").click(function(){
+		window.open("https://johnanwar.github.io/Classic-project/","","")
+	})
+	$(".btn-10").click(function(){
+		window.open("https://github.com/Johnanwar/Classic-project","","")
+	})
 	
 		// works section
 	
@@ -136,7 +118,6 @@ new TypeIt('.front', {
 	
 	// start wow .js
 	
-	new WOW().init();
 
 	
 	
