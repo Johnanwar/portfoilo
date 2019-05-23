@@ -452,10 +452,16 @@ p
 }
 .about-text p
 {
-	padding: 15px;
-	font-weight: bold;
+	padding: 10px;
 	font-size: 18px;
+	font-weight: bolder;
+
 	color: #fff;
+	text-transform: capitalize
+}
+.about-text p span{
+font-style: italic;
+color: #161416
 }
 .about-text i
 {

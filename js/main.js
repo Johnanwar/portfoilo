@@ -90,10 +90,10 @@ var myFunction = setInterval (function(){
 		window.open("https://github.com/Johnanwar/tnatos-pro","","")
 	})
 	$(".btn-7").click(function(){
-		window.open("https://johnanwar.github.io/Classic-project/","","")
+		window.open("https://johnanwar.github.io/first-pro/","","")
 	})
 	$(".btn-8").click(function(){
-		window.open("https://github.com/Johnanwar/Classic-project","","")
+		window.open("https://github.com/Johnanwar/first-pro","","")
 	})
 	$(".btn-9").click(function(){
 		window.open("https://johnanwar.github.io/Classic-project/","","")
