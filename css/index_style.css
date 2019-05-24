@@ -243,17 +243,12 @@ p
 	/* border-right: solid 1px #fff */
 }
 
-.logo
-{
-	padding: 16px 10px;
-	font-size: 20px;
-	background-color: var(--maincolor);
-	color: #fff;
-	text-transform: uppercase;
-	position: relative;
-	font-weight: 900;
+
+.logo img{
+	border-radius: 50%;
+	width: 70px
 }
-.logo::after
+/* .logo::after
 {
 	content: "";
 	bottom: -8px;
@@ -264,7 +259,7 @@ p
 	z-index: 99999;
 	position: absolute;
 	transform: rotate(45deg);
-}
+} */
 
 .text
 {
@@ -295,16 +290,14 @@ p
 }
 .text span::after{
 	content: "";
-	left: -7px;
-	bottom: 3px;
-	width: 19px;
-	height: 19px;
+	left: -5px;
+	bottom: 7.6px;
+	width: 9px;
+	height: 9px;
 	background-color: #2c2d32;
 	z-index: 99999;
 	position: absolute;
 	transform: rotate(45deg);
-	border-left: 1px solid var(--maincolor);
-	border-bottom: 1px solid var(--maincolor);
 }
 
 .text p:hover span
@@ -814,6 +807,20 @@ footer
 }
 /* end alwan SECTION  */
 
+/* start scroll bar colo */
+::-webkit-scrollbar
+{
+	background-color: #333;
+	width: 10px;
+
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--maincolor);;
+	border-radius: 10px;
+	height: 20px;
+}
+
 /* start nav media  */
 
  
@@ -837,12 +844,31 @@ footer
 }
 
 @media only screen and (max-width:1120px) {
-  .nav .logo , .text-down {
-		display: none;
+.text-down {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 55px;
+	left: auto
+  }
+}
+@media only screen and (max-width:1120px) {
+  .nav .logo {
+		display: block;
+		position: absolute;
+    top: 0px;
+    left: 0px
 	  
   }
 }
 
+@media only screen and (max-width:1120px) {
+  .nav .logo img {
+		height: 55px;
+	  
+  }
+}
 @media only screen and (max-width:1120px) {
   .text span {
 		top: 73px;
@@ -884,8 +910,6 @@ footer
 		top: -7px;
 		width: 14px;
 		height: 14px;
-    border-left: 1px solid var(--maincolor);
-		border-top: 1px solid var(--maincolor);
 		border-bottom: none;
 }
 }
