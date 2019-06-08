@@ -107,6 +107,54 @@ var myFunction = setInterval (function(){
 	$(".btn-11").click(function(){
 		window.open("https://johnanwar.github.io/portfoilo/","","")
 	})
+	$(".btn-13").click(function () {
+		window.open("https://johnanwar.github.io/converter/", "", "")
+	})
+
+	$(".btn-14").click(function () {
+		window.open("https://github.com/Johnanwar/converter", "", "")
+	})
+
+	$(".btn-15").click(function () {
+		window.open("https://johnanwar.github.io/clock/", "", "")
+	})
+
+	$(".btn-16").click(function () {
+		window.open("https://github.com/Johnanwar/clock", "", "")
+	})
+
+	$(".btn-17").click(function () {
+		window.open("https://johnanwar.github.io/game-2/", "", "")
+	})
+
+	$(".btn-18").click(function () {
+		window.open("https://github.com/Johnanwar/game-2", "", "")
+	})
+
+	$(".btn-19").click(function () {
+		window.open("https://github.com/Johnanwar/clock", "", "")
+	})
+
+	$(".btn-20").click(function () {
+		window.open("https://github.com/Johnanwar/budget", "", "")
+	})
+
+	$(".btn-21").click(function () {
+		window.open("https://johnanwar.github.io/Hallween-game/", "", "")
+	})
+
+	$(".btn-22").click(function () {
+		window.open("https://github.com/Johnanwar/Hallween-game", "", "")
+	})
+
+	$(".btn-23").click(function () {
+		window.open("https://johnanwar.github.io/note-book/", "", "")
+	})
+
+	$(".btn-24").click(function () {
+		window.open("https://github.com/Johnanwar/note-book", "", "")
+	})
+
 	
 		// works section
 	

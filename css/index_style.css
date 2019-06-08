@@ -617,7 +617,9 @@ color: #161416
 .blog-3 i
 {
 	color: var(--maincolor) ;}
-
+.blog-3 p{
+	text-transform: capitalize;
+}
 /* end section works */
 
 /* start contact section */
