@@ -108,11 +108,11 @@ var myFunction = setInterval (function(){
 		window.open("https://johnanwar.github.io/portfoilo/","","")
 	})
 	$(".btn-13").click(function () {
-		window.open("https://johnanwar.github.io/converter/", "", "")
+		window.open("https://johnanwar.github.io/church-master", "", "")
 	})
 
 	$(".btn-14").click(function () {
-		window.open("https://github.com/Johnanwar/converter", "", "")
+		window.open("https://github.com/Johnanwar/church-master", "", "")
 	})
 
 	$(".btn-15").click(function () {
@@ -132,7 +132,7 @@ var myFunction = setInterval (function(){
 	})
 
 	$(".btn-19").click(function () {
-		window.open("https://github.com/Johnanwar/clock", "", "")
+		window.open("https://johnanwar.github.io/budget/", "", "")
 	})
 
 	$(".btn-20").click(function () {
